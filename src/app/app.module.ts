@@ -6,17 +6,26 @@ import { AppComponent } from './app.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { FormsModule } from '@angular/forms';
+import { HeroParentsComponent } from './hero-parents/hero-parents.component';
+import { HeroChildComponent } from './hero-child/hero-child.component';
+import { VoterComponent } from './voter/voter.component';
+import { VotetakerComponent } from './votetaker/votetaker.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    HeroParentsComponent,
+    HeroChildComponent,
+    VoterComponent,
+    VotetakerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
